@@ -1,4 +1,4 @@
-<!-- Last updated: 2026-03-21 -->
+<!-- Last updated: 2026-03-23 -->
 
 # Prompt Templates
 
@@ -19,10 +19,15 @@ These templates were derived on 2026-03-21 from two sources:
 When starting a Claude session in any project and you need to:
 - Investigate or audit something without changes being made
 - Build a feature with clear acceptance criteria
+- Debug a broken behaviour with structured reproduction steps
 - Get a second opinion on work already done
 - Research options before making a decision
 
 Open the relevant template, fill in the bracketed sections, and use it as your prompt. The structure is the point - it stops the agent from guessing what you want.
+
+## When NOT to Use
+
+Not every task needs a template. For small, obvious changes — typo fixes, variable renames, config updates, one-line edits — just describe what you need directly. Templates add value when the task has multiple requirements, scope boundaries, or a non-obvious deliverable format. If you can describe the whole task in one sentence and the expected outcome is obvious, skip the template.
 
 ## Project Conventions
 
@@ -52,7 +57,7 @@ Verification / Output
 - What the deliverable looks like, how to confirm it worked
 ```
 
-The section names vary by template type, but the four-part structure stays the same: **what you want, how to do it, what to avoid, what done looks like.**
+The section names vary by template type, but the four-part structure stays the same: **what you want, how to do it, what to avoid, what done looks like.** The Debug / Fix template uses a variant: symptom-focused (Expected / Actual / Reproduction) instead of context-focused, since the starting point is broken behaviour rather than a blank slate.
 
 ## Using Templates
 

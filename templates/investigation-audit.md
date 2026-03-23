@@ -1,4 +1,4 @@
-<!-- Last updated: 2026-03-21 -->
+<!-- Last updated: 2026-03-23 -->
 <!--
 Template: Investigation / Audit
 When to use: You want findings, not changes. Code review, security audit,
@@ -18,13 +18,13 @@ Focus
 - [Specific area 3]
 
 Method
-1. [First step]
-2. [Second step]
-3. [Third step]
+1. [Phase 1 — e.g. map all entry points]
+2. [Phase 2 — e.g. trace data flow through each path]
+3. [Phase 3 — e.g. check each path against criteria]
 
 Constraints
 - Read only. Do not modify any files.
-- [Any scope limits]
+- Limit scope to [boundary — e.g. only files in src/auth/]. [Why — e.g. the rest of the codebase is out of scope for this audit]
 - If anything is ambiguous, state your assumption and flag it.
 
 Output
@@ -34,4 +34,9 @@ For each finding, document:
 - Why it matters: impact
 - Suggested fix: one sentence
 
+Before finishing, verify your findings are consistent — no contradictions, no duplicates, no findings outside the stated scope.
+
 Finish with the top 3 highest-impact findings.
+
+Examples (optional)
+[1-3 examples of the kind of findings you expect. Remove this section if not needed.]
